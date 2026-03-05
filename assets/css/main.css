@@ -1,25 +1,62 @@
+html {
+  --body-padding-left: 5%;
+  --border-size: 3px;
+}
+
 body {
-  background-color: rgb(182, 134, 236);
+  background-color: rgb(177, 121, 241);
 }
 
 .page-body {
-  padding-left: 5%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-
-#header {
-  background-color: rgb(140, 64, 240);
-
-  padding-left: 5%;
-  padding-top: 1%;
-  padding-bottom: 0.5%;
+  padding: 0.75rem 0 5rem var(--body-padding-left);
 }
 
 #footer {
-  background-color: rgb(223, 129, 226);
+  background-color: rgb(227, 116, 231);
+  border: 14px ridge rgb(35, 120, 231);
   text-align: center;
+  padding: 0.5% 0;
+}
 
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
+#header {
+  height: fit-content;
+  background-color: rgb(140, 64, 240);
+  color: black;
+  border: 14px ridge rgb(209, 12, 209);
+  padding: 0.75rem 0 0 var(--body-padding-left);
+}
+
+#nav ul {
+  padding-left: 0;
+}
+
+#nav li {
+  background-color: rgb(161, 54, 223);
+  list-style: none;
+}
+
+#nav a {
+  text-align: center;
+  border: var(--border-size) solid;
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  width: 120px;
+  padding: 10px 0;
+}
+
+#nav a:focus,
+#nav a:hover {
+  color: white;
+  background-color: rgb(62, 18, 104);
+}
+
+@media (min-width: 120px) {
+  #nav a {
+    display: inline-block;
+  }
+
+  #nav li {
+    display: inline-block;
+  }
 }
