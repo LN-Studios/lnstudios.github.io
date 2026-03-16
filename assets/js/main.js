@@ -38,7 +38,6 @@ header.innerHTML = `
 footer.innerHTML = `
   <div>
     <p>This website was made from scratch without the use of any generative AI</p>
-    <p>Last updated 3/9/2026</p>
+    <p>Last updated 3/16/2026</p>
   </div>
-
 `;

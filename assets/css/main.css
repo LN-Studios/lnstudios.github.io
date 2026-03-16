@@ -1,14 +1,30 @@
 html {
-  --body-padding-left: 5%;
+  --body-padding: 5%;
   --border-size: 3px;
 }
 
 body {
-  background-color: rgb(177, 121, 241);
+  background-color: rgb(153, 83, 233);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.page-body p {
+  font-size: 1.2rem;
 }
 
 .page-body {
-  padding: 0.75rem 0 5rem var(--body-padding-left);
+  padding: 0.75rem var(--body-padding) 5rem var(--body-padding);
+}
+
+.bio-paragraph {
+  display: flex;
+}
+
+.page-body p img {
+  padding-left: 1%;
 }
 
 #footer {
@@ -24,7 +40,7 @@ body {
   background-color: rgb(140, 64, 240);
   color: black;
   border: 14px ridge rgb(209, 12, 209);
-  padding: 0.75rem 0 0 var(--body-padding-left);
+  padding: 0.75rem 0 0 var(--body-padding);
 }
 
 #nav ul {
